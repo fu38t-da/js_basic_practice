@@ -36,3 +36,31 @@ for(let num = 1; num <=100; num++){
     console.log(num);
   }
 }
+
+// 3で割り切れる時はFizz
+// 5で割り切れる時はBuzz
+// 両方で割り切れる時はFizzBuzz
+// それ以外は1〜100まで
+// 値はconsole.logで出力
+for (let text = 1; text <= 100; text++) {
+  if(text % 3 ==0 && text % 5 ==0){
+    console.log('FizzBuzz');
+  }else if (text % 5==0){
+    console.log('Buzz');
+  }
+  else if (text % 3 ==0){
+    console.log('Fizz');
+  }else {
+    console.log(text);
+  }
+}
+
+// let text = 1;
+// switch (text) {
+//   case text % 3 == :
+    
+//     break;
+
+//   default:
+//     break;
+// }
