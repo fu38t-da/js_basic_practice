@@ -4,8 +4,6 @@
 // 変数（代入可能）
 // console.logで出力
 
-
-
 let score = 60;
 if (score >= 80) {
   console.log(`${score}点、合格`)
@@ -15,4 +13,12 @@ if (score >= 80) {
   console.log(`${score}点、残念`);
 } else {
   console.log(`${score}点、また来年`);
+}
+
+for(let i = 1; i <=30; i++){
+  if(i % 3 ==0){
+    console.log('アホ');
+  }else{
+    console.log(i);
+  }
 }
