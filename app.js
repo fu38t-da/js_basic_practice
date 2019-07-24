@@ -43,17 +43,17 @@ for(let num = 1; num <=100; num++){
 // それ以外は1〜100まで
 // 値はconsole.logで出力
 for (let text = 1; text <= 100; text++) {
-  if(text % 3 ==0 && text % 5 ==0){
+  if(text % 3 ==0 && text % 5 ==0) {
     console.log('FizzBuzz');
-  }else if (text % 5==0){
+  } else if (text % 5==0){
     console.log('Buzz');
-  }
-  else if (text % 3 ==0){
+  } else if (text % 3 ==0){
     console.log('Fizz');
-  }else {
+  } else {
     console.log(text);
   }
 }
+// 1個ずつ処理をする
 
 // let text = 1;
 // switch (text) {
@@ -64,3 +64,46 @@ for (let text = 1; text <= 100; text++) {
 //   default:
 //     break;
 // }
+
+
+// let fish = confirm('あなたは魚が好きですか？');
+// if(fish){
+//   console.log('あなたをさかなクンと呼びます');
+// } else{
+//   console.log('さかなくんまで後少しです')
+// }
+// console.log(fish);
+
+// let fruit = prompt('あなたの好きなフルーツは何ですか');
+// 私の好きなフルーツは  です。
+// console.log(fruit);
+// console.log(`私の好きなフルーツは、${fruit}です`)
+// バッククウォート``
+
+// りんご　青森産が美味しいです
+// みかん　温州みかんがお勧めです
+// バナナ　フィリピンが名産です
+// 桃　と言えば岡山ですね
+// その他　何かしらのメッセージ
+
+let fruit = prompt('あなたの好きなフルーツは何ですか');
+switch(true){
+  case fruit === 'りんご':
+    console.log('青森県産が美味しいです');
+    break;
+  case fruit === 'みかん':
+    console.log('温州みかんがお勧めです');
+  case fruit === 'バナナ':
+    console.log('フィリピンが名産です');
+  case fruit === '桃':
+    console.log('と言えば岡山です')
+  default:
+    console.log('あなたはニッチなフルーツが好きなんですね');
+    break;
+}
+
+function getAge(age){
+  console.log(2019 - age);
+}
+
+getAge(1988);
